@@ -22,17 +22,17 @@ class _MainScreenState extends State<MainScreen> {
         height: size.height,
         width: size.width,
         decoration: BoxDecoration(
-            gradient: RadialGradient(colors: [
+            gradient: LinearGradient(colors: [
           Colors.black45,
           Colors.black,
           Colors.black,
           Colors.black,
-          Colors.orange[900]!,
+          Colors.orange[600]!,
           Colors.amber[200]!,
           Colors.amber[200]!,
           Colors.amber[200]!,
           Colors.white
-        ], radius: 1.5)),
+        ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         child: SafeArea(
             bottom: false,
             child: Padding(
@@ -228,7 +228,11 @@ class _MainScreenState extends State<MainScreen> {
             decoration: BoxDecoration(
                 border: Border.all(), borderRadius: BorderRadius.circular(50)),
             child: const Center(
-              child: Badge(child: Icon(Iconsax.notification)),
+              child: Badge(
+                  child: Icon(
+                Iconsax.notification,
+                color: Colors.white,
+              )),
             ),
           ),
         )

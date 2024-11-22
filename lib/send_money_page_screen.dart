@@ -21,10 +21,10 @@ class _MoneySenderPageState extends State<MoneySenderPage> {
         Colors.black,
         Colors.black,
         Colors.black,
-        Colors.orange[900]!,
-        Colors.amber[200]!,
-        Colors.amber[200]!,
-        Colors.amber[200]!,
+        // Colors.orange[900]!,
+        // Colors.amber[200]!,
+        // Colors.amber[200]!,
+        // Colors.amber[200]!,
         Colors.white
       ], radius: 1.5)),
       child: SafeArea(
